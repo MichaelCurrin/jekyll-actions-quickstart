@@ -8,3 +8,4 @@
 
 - [jekyll.yml](https://github.com/actions/starter-workflows/blob/master/ci/jekyll.yml) from [actions/starter-workflows](https://github.com/actions/starter-workflows/blob/master/ci/jekyll.yml) - used to create this project's workflow.
 - [Actions](https://github.com/features/actions) on Github docs
+- [Jekyll-related actions](https://github.com/marketplace?type=actions&query=jekyll) in the Github Marketplace.
