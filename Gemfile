@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 
-gem "jekyll-theme-architect"
+gem 'jekyll', '~> 4.0.0'
