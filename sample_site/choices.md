@@ -64,8 +64,10 @@ jobs:
 ```
 {% endraw %}
 
+### Token
 
-The instructions require you to set the variable `JEKYLL_PAT` using your Personal Access Token. So you'll need to create in Github and then add it in the _Secrets_ sections of the repo settings - i.e. do not paste it directly in a version-controlled (public) file.
+The instructions require you to set the variable `JEKYLL_PAT` using your Personal Access Token.
+
 
 {% raw %}
 ```
@@ -80,6 +82,26 @@ This is used in one place in the repo - [entrypoint.sh](https://github.com/helai
 ```
 remote_repo="https://${JEKYLL_PAT}@github.com/${GITHUB_REPOSITORY}.git" && \
 ```
+
+ So you'll need to create in Github and then add it in the _Secrets_ sections of the repo settings - i.e. do not paste it directly in a version-controlled (public) file.
+
+Go here:
+
+- https://github.com/settings/tokens
+
+Then Personal Access Tokens.
+
+Create a token. Name it something like _Github Actions_. Ensure it has _workflow_ access.
+
+Copy the value.
+
+Come back to your repo and go to Settings then Secrets.
+
+Create the create as `JEKYLL_PAT` with the copied value.
+
+Build your site.
+
+### View
 
 On a successful build, Github Pages will publish the site and will be available in the environment tab of your repo.
 
