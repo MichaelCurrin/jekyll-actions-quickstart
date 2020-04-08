@@ -84,3 +84,28 @@ remote_repo="https://${JEKYLL_PAT}@github.com/${GITHUB_REPOSITORY}.git" && \
 On a successful build, Github Pages will publish the site and will be available in the environment tab of your repo.
 
 Note that the action will build from the `master` branch to the `gh-pages` branch.
+
+### Warning
+
+Rather than installing Jekyll globally locally, you might want to install Jekyll in your project using _Bundler_.
+
+Note that _Bundler_ will show up in your lock file.
+
+```
+...
+
+BUNDLED WITH
+   1.17.2
+```
+
+But not in your Gemfile. This will cause an error:
+
+```
+/usr/local/lib/ruby/2.7.0/rubygems.rb:275:in `find_spec_for_exe': Could not find 'bundler' (1.17.2) required by your /github/workspace/Gemfile.lock. (Gem::GemNotFoundException)
+```
+
+Solutions:
+
+- Switch to creating Gemfile.lock using a global Jekyll build locally (not practical if you want to avoid using global Jekyll).
+- Delete Gemfile.lock (this means versions are not locked).
+- Install Bundle instead project dependencies by adding to Gemfile and running install command again, to update Gemfile.lock.
