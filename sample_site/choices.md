@@ -27,9 +27,16 @@ Links:
 - [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) on Marketplace.
 - [helaili/jekyll-action](https://github.com/helaili/jekyll-action) repo by [helaili](https://github.com/helaili), a staff member at Github.
 
-The instructions on the Marketplace page are the same as on the repo README.md and are a good intro.
 
-Create your project. Edit on `master` branch.
+Note that the action will build from the `master` branch to the `gh-pages` branch and setup Github Pages to point to `gh-pages`. All your edits should be on `master` throughout.
+
+The instructions on the Marketplace page are the same as on the repo README.md and are a good intro. But they leave some details out.
+
+Follow the steps below to setup.
+
+### Setup repo
+
+Create your project on `master`.
 
 If you click _Use latest version_ in the Marketplace, you get this snippet which should be pasted in your YAML actions file:
 
@@ -64,7 +71,7 @@ jobs:
 ```
 {% endraw %}
 
-### Token
+### Add token
 
 The instructions require you to set the variable `JEKYLL_PAT` using your Personal Access Token.
 
@@ -91,23 +98,48 @@ Go here:
 
 Then Personal Access Tokens.
 
-Create a token. Name it something like _Github Actions_. Ensure it has _workflow_ access.
+Create a token. Name it something like _Github Actions_.
 
-Copy the value.
+Ensure it has access to:
+
+- _public repos_
+- _workflow_
+
+Even if access is insufficient the build may give a success at each step and you'll have to look closer for the error messages.
+
+Copy the token value.
 
 Come back to your repo and go to Settings then Secrets.
 
-Create the create as `JEKYLL_PAT` with the copied value.
+Create the create named `JEKYLL_PAT` and set the value as copied value.
 
-Build your site.
+### Build
+
+You do not need to setup `gh-pages` branch or enable Github Pages. The action will do this for you.
+
+So build your site (such as doing a push to the repo).
+
+Check the status.
+
+- Go to your repo main root in Github. Under the most recent commit (near the top) you'll see a status symbol next to the commit message.
+- Or go to Actions tab.
+
+If all goes well, you'll see all the steps completed without error.
 
 ### View
 
-On a successful build, Github Pages will publish the site and will be available in the environment tab of your repo.
+On a successful build, Github Pages will publish the site.
 
-Note that the action will build from the `master` branch to the `gh-pages` branch.
+Go to the environment tab of your repo. Click _View Deployment_ to see the deployed site.
 
-### Warning
+e.g.
+
+- https://michaelcurrin.github.io/jekyll-actions/
+
+Add this to the URL part of your repo to make it easy to find.
+
+
+### Note
 
 Rather than installing Jekyll globally locally, you might want to install Jekyll in your project using _Bundler_.
 
