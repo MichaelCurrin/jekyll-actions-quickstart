@@ -59,7 +59,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
+  bundler (~> 1.17.2)
   jekyll (~> 4.0.0)
 
 BUNDLED WITH
