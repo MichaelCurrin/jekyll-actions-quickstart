@@ -131,3 +131,13 @@ Solutions:
 - Switch to creating Gemfile.lock using a global Jekyll build locally (not practical if you want to avoid using global Jekyll).
 - Delete Gemfile.lock (this means versions are not locked).
 - Install Bundle instead project dependencies by adding to Gemfile and running install command again, to update Gemfile.lock.
+
+I went with the last solution for this repo. This means that Gemfile.lock now contains this:
+
+```
+DEPENDENCIES
+  bundler
+  jekyll (~> 4.0.0)
+```
+
+So the _BUNDLED WITH_ section is now fine.
