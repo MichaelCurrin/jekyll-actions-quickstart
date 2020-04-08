@@ -4,4 +4,5 @@ title: Home
 
 Jekyll Actions example and tutorial.
 
-- [choices](.)
+- [about](about.md)
+- [choices](choices.md)
