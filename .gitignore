@@ -1,0 +1,9 @@
+build/*
+
+.env
+
+.jekyll-metadata
+.jekyll-cache/
+
+.bundle/
+vendor/
