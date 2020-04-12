@@ -10,7 +10,8 @@ Only certain supported gems are available and at the version that Github Pages s
 This means:
 
 - Jekyll (which is also a gem) version is pinned at `3.8.5`.
-- You cannot use any custom plugin that you write or find online, unless it is on the list.
+- The other supported plugins are only available at pinned versions.
+- Any unsupported plugin you find or write cannot be used.
 - Only about 10 themes are available. These are the ones you choose from in repo Settings when using the theme selector.
 
 
