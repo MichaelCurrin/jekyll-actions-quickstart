@@ -2,7 +2,10 @@
 title: Home
 ---
 
-Jekyll Actions example and tutorial
+# Jekyll Actions
+
+Live demo on Github Pages plus a resources and a tutorial.
 
 - [About](about)
-- [Choices](choices)
+- [Limitations](limitations)
+- [Action choices](choices)
