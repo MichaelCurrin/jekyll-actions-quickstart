@@ -1,11 +1,18 @@
+### From original project
 build/*
-
 .env
 
-.jekyll-metadata
-.jekyll-cache/
+
+### Install
 
 .bundle/
 vendor/
-
+# Ignore to avoid errors on Actions build.
 Gemfile.lock
+
+
+### Build
+
+.jekyll-cache/
+.jekyll-metadata
+_site
