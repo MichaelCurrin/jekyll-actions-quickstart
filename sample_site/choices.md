@@ -9,9 +9,7 @@ Where to find Jekyll actions on Github.
 
 If you create a new action through the Actions tab, you'll see a Jekyll action there. You might have to click a _more..._ button.
 
-That references this file:
-
-[jekyll.yml](https://github.com/actions/starter-workflows/blob/master/ci/jekyll.yml) in the [actions/starter-workflows](https://github.com/actions/starter-workflows) repo.
+That references [jekyll.yml](https://github.com/actions/starter-workflows/blob/master/ci/jekyll.yml) in the [actions/starter-workflows](https://github.com/actions/starter-workflows) repo.
 
 It does provide any info though on what you do after a successful build in terms of publishing and viewing results.
 
@@ -73,7 +71,7 @@ jobs:
 
 ### Add token
 
-The instructions require you to set the variable `JEKYLL_PAT` using your Personal Access Token.
+The instructions require you to set the variable `JEKYLL_PAT` using your PAT (Personal Access Token).
 
 
 {% raw %}
@@ -92,20 +90,20 @@ remote_repo="https://${JEKYLL_PAT}@github.com/${GITHUB_REPOSITORY}.git" && \
 
  So you'll need to create in Github and then add it in the _Secrets_ sections of the repo settings - i.e. do not paste it directly in a version-controlled (public) file.
 
-Go here:
+Go here to the repo's Tokens page under Settings:
 
 - https://github.com/settings/tokens
 
-Then Personal Access Tokens.
+Then to the _Personal Access Tokens_ tab.
 
 Create a token. Name it something like _Github Actions_.
 
 Ensure it has access to:
 
-- _public repos_
+- _public repos_ (necessary for pushing to `gh-pages` branch)
 - _workflow_
 
-Even if access is insufficient the build may give a success at each step and you'll have to look closer for the error messages.
+_Note: The build on Github may give a **misleading success** status for all steps. So you'll have to look closer for the error messages. If the build check passes but nothing is rendered. This happened to me and adding permissions fixed the error._
 
 Copy the token value.
 
