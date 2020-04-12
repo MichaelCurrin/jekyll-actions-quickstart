@@ -15,7 +15,7 @@ This means:
 - Only about 10 themes are available. These are the ones you choose from in repo Settings when using the theme selector.
 
 
-Lists of what is supported by Github Pages:
+Github Pages supports what is on these lists:
 
 - [Gem versions](https://pages.github.com/versions/)
 - [Themes](https://pages.github.com/themes/)
