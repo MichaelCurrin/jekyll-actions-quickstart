@@ -2,7 +2,7 @@
 title: Limitations
 ---
 
-Limitations of using Github Pages **without** using Github Actions to do a custom build.
+> Description of the limitations of using gems supported by Github Pages when not using Actions.
 
 
 Only certain supported gems are available and at the version that Github Pages sets.
