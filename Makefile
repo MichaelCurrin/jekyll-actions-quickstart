@@ -6,3 +6,6 @@ install:
 
 upgrade:
 	bundle update
+
+s serve:
+	bundle exec jekyll serve --livereload --source sample_site
