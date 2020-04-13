@@ -2,19 +2,19 @@
 > Showcase of using Jekyll 4 through Github Actions
 
 [![Jekyll site CI](https://github.com/MichaelCurrin/jekyll-actions/workflows/Jekyll%20site%20CI/badge.svg)](https://github.com/MichaelCurrin/jekyll-actions/actions)
+[![Made with Github Pages](https://img.shields.io/badge/Made%20with-Github%20Pages-blue.svg)](https://pages.github.com/)
+[![Made with Github Actions](https://img.shields.io/badge/Made%20with-Github%20Actions-blue.svg)](https://help.github.com/en/actions)
+[![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll%20Actions-2.0.0-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
+
 
 Project site:
 
-- [jekyll-actions](https://michaelcurrin.github.io/jekyll-actions/)
-
-Or click the _Use this template_ button to create a repo in your own account.
+[![Github Pages site](https://img.shields.io/badge/site-Github%20Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/badge-generator/)
 
 
-## Resources
+Get your own repo like this:
 
-- [jekyll.yml](https://github.com/actions/starter-workflows/blob/master/ci/jekyll.yml) from [actions/starter-workflows](https://github.com/actions/starter-workflows/blob/master/ci/jekyll.yml) - used to create this project's workflow.
-- [Actions](https://github.com/features/actions) on Github docs
-- [Jekyll-related actions](https://github.com/marketplace?type=actions&query=jekyll) in the Github Marketplace.
+[![Use this template](https://img.shields.io/badge/Use_this_template-green.svg)](https://github.com/MichaelCurrin/jekyll-actions/generate)
 
 
 ## Development
