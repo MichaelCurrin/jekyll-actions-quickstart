@@ -3,7 +3,7 @@ title: Action choices
 layout: page
 ---
 
-Where to find Jekyll actions on Github.
+> Where to find Jekyll actions on Github.
 
 Note that an Action builds inside a container on Github so you need an actions file to provide the steps and either specify shell commands directly or reference an existing action in your action file to use that.
 
@@ -18,16 +18,18 @@ It does provide any info though on what you do after a successful build in terms
 
 ## Helaili
 
-See this action **Jekyll Actions***.
+See this action **Jekyll Actions**.
 
 > A GitHub Action to build and publish Jekyll sites to GitHub Pages
 
-Links:
+Links around this action:
 
-- [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) on Marketplace.
-- [helaili/jekyll-action](https://github.com/helaili/jekyll-action) repo by [helaili](https://github.com/helaili), a staff member at Github.
-    - [entrypoint.sh](https://github.com/helaili/jekyll-action/blob/master/entrypoint.sh)
-        - The shell commands which are run in the build, including use of `jekyll` and `git`. This is useful to see what would happen on the remote environment, for example file and directory references for inputs and outputs. Also it shows that `bundle` is actually used in the container.
+- [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions)
+    - On Github Marketplace.
+- [helaili/jekyll-action](https://github.com/helaili/jekyll-action)
+    - Repo by [helaili](https://github.com/helaili), a staff member at Github.
+- [entrypoint.sh](https://github.com/helaili/jekyll-action/blob/master/entrypoint.sh)
+    - The shell commands which are run in the build, including use of `jekyll` and `git`. This is useful to see what would happen on the remote environment, for example file and directory references for inputs and outputs. Also it shows that `bundle` is actually used in the container.
 
 
 Note that the action will build from the `master` branch to the `gh-pages` branch and setup Github Pages to point to `gh-pages`. All your edits should be on `master` throughout.
@@ -96,7 +98,7 @@ remote_repo="https://${JEKYLL_PAT}@github.com/${GITHUB_REPOSITORY}.git" && \
 
 Go here to the repo's Tokens page under Settings:
 
-- https://github.com/settings/tokens
+- [github.com/settings/tokens](https://github.com/settings/tokens)
 
 Then to the _Personal Access Tokens_ tab.
 
@@ -136,7 +138,7 @@ Go to the environment tab of your repo. Click _View Deployment_ to see the deplo
 
 e.g.
 
-- https://michaelcurrin.github.io/jekyll-actions/
+- [michaelcurrin.github.io/jekyll-actions/](https://michaelcurrin.github.io/jekyll-actions/)
 
 Add this to the URL part of your repo to make it easy to find.
 

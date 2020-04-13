@@ -3,7 +3,7 @@ title: About
 layout: page
 ---
 
-Use Github's Actions functionality as a deploy pipeline which gives a lot more control than the standard Github Pages deploy.
+> Use Github's Actions functionality as a deploy pipeline which gives a lot more control than the standard Github Pages deploy.
 
 You can run any gem you want even if it not supported by Github Pages.
 
