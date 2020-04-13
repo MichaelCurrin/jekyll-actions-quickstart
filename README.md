@@ -26,6 +26,11 @@ Note that `Gemfile.lock` must remain as file **ignored** by `git` to avoid build
 
 Alternatively, keep the file either build will a global (user-level) Jekyll. Or keep building a `Gemfile.lock` remember to manually remove the `bundler` reference.
 
+### Excluding
+
+The Makefile, LICENSE, README do not have to be excluded as this site is setup to build from a subdirectory. Otherwise they would have to be added.
+
+The Gemfile and Gemfile.lock are always ignored by Jekyll 4.
 
 
 ## License
