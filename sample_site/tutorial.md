@@ -107,8 +107,11 @@ Create a token. Name it something like _Github Actions_.
 
 Ensure it has access to:
 
+- _repo:status_
+- _repo_deployment_
 - _public repos_ (necessary for pushing to `gh-pages` branch)
 - _workflow_
+
 
 _Note: The build on Github may give a **misleading success** status for all steps. So you'll have to look closer for the error messages. If the build check passes but nothing is rendered. This happened to me and adding permissions fixed the error._
 
