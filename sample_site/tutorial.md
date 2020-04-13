@@ -128,6 +128,7 @@ Check the status.
 
 If all goes well, you'll see all the steps completed without error.
 
+
 ### View
 
 On a successful build, Github Pages will publish the site.
@@ -143,34 +144,6 @@ Add this to the URL part of your repo to make it easy to find.
 
 ### Notes
 
-#### Bundler
-
-Rather than installing Jekyll globally locally, you might want to install Jekyll in your project using _Bundler_.
-
-Note that _Bundler_ will show up in your lock file.
-
-```
-...
-
-BUNDLED WITH
-   1.17.2
-```
-
-But not in your Gemfile. This will cause an error:
-
-```
-/usr/local/lib/ruby/2.7.0/rubygems.rb:275:in `find_spec_for_exe': Could not find 'bundler' (1.17.2) required by your /github/workspace/Gemfile.lock. (Gem::GemNotFoundException)
-```
-
-Solutions:
-
-- Switch to creating Gemfile.lock using a global Jekyll build locally (not practical if you want to avoid using global Jekyll).
-- Delete Gemfile.lock (this means versions are not locked). The remote build will then use its global Jekyll and not try to use Bundler, even if you use Bundler locally.
-
-Unfortunately, putting Bundler inside Gemfile and running install did not work.
-
-#### Env
-
-If you needed to set values in the environment locally, you could do this with an ignore `.env` file. And make sure that is loaded when running a Jekyll build.
+If you needed to set values in the environment locally, you could do this with an ignore `.env` file at the root. And make sure that is loaded when running a Jekyll build - some plugins will read from it directly.
 
 In this case the only environment variable needed is one needed to actually run the action and build to `gh-pages` branch, so this project has no `.env` file.
