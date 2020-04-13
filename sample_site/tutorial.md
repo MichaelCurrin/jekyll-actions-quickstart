@@ -87,7 +87,7 @@ ${{ secrets.JEKYLL_PAT }}
 ```
 {% endraw %}
 
-That token presumably allows access to your Github repo by the action.
+That token allows access to your Github repo by the action.
 
 This is used in one place in the repo - [entrypoint.sh](https://github.com/helaili/jekyll-action/blob/master/entrypoint.sh):
 
