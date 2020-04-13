@@ -11,9 +11,43 @@ See the live demo which includes a tutorial page:
 
 [![Github Pages site](https://img.shields.io/badge/site-Github%20Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
 
-Create your own repo like this:
+Create your own repo like this using the button below and follow the instructions on this page.
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-green.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
+
+
+## Remote setup
+
+Add this repo to your Github repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get build from scratch.
+
+Follow the instructions in the tutorial page's _Add token_ section to add `JEKYLL_PAT` to the environment as Secret, so you have a Github Auth token created and added to your repo.
+
+Save a file or push a commit then watch the site get built to Github Pages.
+
+Check the environment tab to see the status and the URL.
+
+
+## Local setup
+
+### Installation
+
+Ensure you have a Ruby and Bundler installed.
+
+Clone the repo.
+
+Install dependencies with Bundler.
+
+```sh
+$ make install
+```
+
+### Usage
+
+Start a development server with Jekyll.
+
+```sh
+make serve
+```
 
 
 ## Development
