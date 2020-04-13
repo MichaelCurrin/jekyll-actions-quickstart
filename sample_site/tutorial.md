@@ -109,7 +109,7 @@ Ensure it has access to:
 
 - _repo:status_
 - _repo_deployment_
-- _public repos_ (necessary for pushing to `gh-pages` branch)
+- _public\_repos_ (necessary for pushing to `gh-pages` branch)
 - _workflow_
 
 
