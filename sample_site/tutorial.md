@@ -38,7 +38,6 @@ Links around this Action:
 
 Note that the action will build from the `master` branch to the `gh-pages` branch and setup Github Pages to point to `gh-pages`. All your edits should be on `master` throughout.
 
-
 The instructions on the Marketplace page are the same as on the repo README.md and are a good intro. But they leave some details out.
 
 Follow the steps below to setup this Action on your own project.
