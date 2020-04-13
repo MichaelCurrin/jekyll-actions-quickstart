@@ -21,9 +21,9 @@ It does provide any info though on what you do after a successful build in terms
 This Action was not used for this site and is not covered in more detail.
 
 
-## Jekyll Actions by Helaili
+## Jekyll Action by Helaili
 
-Description:
+Description for _Jekyll Action_.
 
 > A GitHub Action to build and publish Jekyll sites to GitHub Pages
 
@@ -47,14 +47,14 @@ Follow the steps below to setup this Action on your own project.
 
 Create your project on `master`. The Action can still be triggered by builds to feature branches, but the Action specifically only builds from content on `master`.
 
-If you click _Use latest version_ in the Marketplace, you get this snippet which should be pasted in your YAML actions file:
+If you click _Use latest version_ in the Marketplace, you get this snippet which should be pasted in your YAML workflow.
 
 ```yaml
 - name: Jekyll Actions
   uses: helaili/jekyll-action@2.0.0
 ```
 
-Create `Gemfile` in the root.
+Create a `Gemfile` in the root of the project.
 
 Create folder containing site contents and also a `_config.yml` file. The folder can be called anything and the plugin will pick it up from the presence of the config.
 
