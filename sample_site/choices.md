@@ -1,9 +1,11 @@
 ---
 title: Action choices
+layout: page
 ---
 
 Where to find Jekyll actions on Github.
 
+Note that an Action builds inside a container on Github so you need an actions file to provide the steps and either specify shell commands directly or reference an existing action in your action file to use that.
 
 ## Starter workflows
 
@@ -24,6 +26,8 @@ Links:
 
 - [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) on Marketplace.
 - [helaili/jekyll-action](https://github.com/helaili/jekyll-action) repo by [helaili](https://github.com/helaili), a staff member at Github.
+    - [entrypoint.sh](https://github.com/helaili/jekyll-action/blob/master/entrypoint.sh)
+        - The shell commands which are run in the build, including use of `jekyll` and `git`. This is useful to see what would happen on the remote environment, for example file and directory references for inputs and outputs. Also it shows that `bundle` is actually used in the container.
 
 
 Note that the action will build from the `master` branch to the `gh-pages` branch and setup Github Pages to point to `gh-pages`. All your edits should be on `master` throughout.
@@ -137,7 +141,9 @@ e.g.
 Add this to the URL part of your repo to make it easy to find.
 
 
-### Note
+### Notes
+
+#### Bundler
 
 Rather than installing Jekyll globally locally, you might want to install Jekyll in your project using _Bundler_.
 
@@ -162,3 +168,9 @@ Solutions:
 - Delete Gemfile.lock (this means versions are not locked). The remote build will then use its global Jekyll and not try to use Bundler, even if you use Bundler locally.
 
 Unfortunately, putting Bundler inside Gemfile and running install did not work.
+
+#### Env
+
+If you needed to set values in the environment locally, you could do this with an ignore `.env` file. And make sure that is loaded when running a Jekyll build.
+
+In this case the only environment variable needed is one needed to actually run the action and build to `gh-pages` branch, so this project has no `.env` file.

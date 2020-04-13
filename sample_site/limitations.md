@@ -1,5 +1,6 @@
 ---
 title: Limitations
+layout: page
 ---
 
 > Description of the limitations of using gems supported by Github Pages when not using Actions.
@@ -12,7 +13,8 @@ This means:
 - Jekyll (which is also a gem) version is pinned at `3.8.5`.
 - The other supported plugins are only available at pinned versions.
 - Any unsupported plugin you find or write cannot be used.
-- Only about 10 themes are available. These are the ones you choose from in repo Settings when using the theme selector.
+- Only about 10 themes are available as supported themes. These are the ones you choose from in repo Settings when using the theme selector.
+- Note there is a way to set a remote theme (not supported by Github) using `remote_theme` parameter and [benbalter/jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) plugin, which is already supported plugin.
 
 
 Github Pages supports what is on these lists:
