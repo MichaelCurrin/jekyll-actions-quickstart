@@ -2,8 +2,6 @@
 
 .bundle/
 vendor/
-# Ignore to avoid errors on Actions build around bundler.
-Gemfile.lock
 
 
 ### Build
