@@ -19,7 +19,7 @@ This project serves the following purposes:
 - **[About Actions]({% link about.md %})**
     - Describes what you can do using Actions on Github Pages.
 - **Template**
-    - Create your own repo based on this one - [![Use this template](https://img.shields.io/badge/Use_this_template-green.svg)](https://github.com/MichaelCurrin/jekyll-actions/generate)
+    - Create your own repo based on this one - [![Use this template](https://img.shields.io/badge/Use_this_template-green.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
 - **[Tutorial]({% link tutorial.md %})**
     - Instructions and resources to add Actions to your Jekyll site.
 - **Live demo**
