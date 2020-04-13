@@ -30,7 +30,6 @@ Description:
 Links around this Action:
 
 - [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) on the Marketplace
-    -  to Marketplace
 - [helaili/jekyll-action](https://github.com/helaili/jekyll-action) repo
     - By [helaili](https://github.com/helaili), a staff member at Github.
 - [entrypoint.sh](https://github.com/helaili/jekyll-action/blob/master/entrypoint.sh)
@@ -39,14 +38,16 @@ Links around this Action:
 
 Note that the action will build from the `master` branch to the `gh-pages` branch and setup Github Pages to point to `gh-pages`. All your edits should be on `master` throughout.
 
+
 The instructions on the Marketplace page are the same as on the repo README.md and are a good intro. But they leave some details out.
 
 Follow the steps below to setup this Action on your own project.
 
 
+
 ### Setup repo
 
-Create your project on `master`.
+Create your project on `master`. The Action can still be triggered by builds to feature branches, but the Action specifically only builds from content on `master`.
 
 If you click _Use latest version_ in the Marketplace, you get this snippet which should be pasted in your YAML actions file:
 
