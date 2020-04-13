@@ -1,2 +1,12 @@
-title: Jekyll Actions
-description: "Demo of using Jekyll 4 on Github Pages through Actions"
+title: Jekyll Actions Guide
+description: "How to setup Github Pages + Actions for use with Jekyll 4"
+
+url: "https://michaelcurrin.github.io/jekyll-actions/"
+baseurl: "/jekyll-actions"
+
+github_username: MichaelCurrin
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-timeago

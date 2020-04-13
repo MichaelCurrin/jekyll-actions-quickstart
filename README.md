@@ -1,12 +1,13 @@
-# Jekyll Actions
-> Actions on Github Pages to support custom gems including Jekyll 4
+# Jekyll Actions Guide
+> Showcase of using Jekyll 4 through Github Actions
 
 [![Jekyll site CI](https://github.com/MichaelCurrin/jekyll-actions/workflows/Jekyll%20site%20CI/badge.svg)](https://github.com/MichaelCurrin/jekyll-actions/actions)
 
-
-View the demo site, which also acts as a tutorial and resources.
+Project site:
 
 - [jekyll-actions](https://michaelcurrin.github.io/jekyll-actions/)
+
+Or click the _Use this template_ button to create a repo in your own account.
 
 
 ## Resources

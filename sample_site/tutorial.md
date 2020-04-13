@@ -1,8 +1,13 @@
 ---
-title: Action choices
+title: Tutorial
+layout: page
 ---
 
-Where to find Jekyll actions on Github.
+> Where to find Jekyll actions on Github and how to set one up.
+
+Note that an Action builds inside a container on Github so you need a workflows file to provide the steps and either specify shell commands directly or reference an existing action in your action file to use that.
+
+There are two Actions listed below - [Starter workflows](#starter-workflows) action and [Jekyll Actions by Helaili](#jekyll-actions-by-helaili).
 
 
 ## Starter workflows
@@ -13,37 +18,43 @@ That references [jekyll.yml](https://github.com/actions/starter-workflows/blob/m
 
 It does provide any info though on what you do after a successful build in terms of publishing and viewing results.
 
+This Action was not used for this site and is not covered in more detail.
 
-## Helaili
 
-See this action **Jekyll Actions***.
+## Jekyll Action by Helaili
+
+Description for _Jekyll Action_.
 
 > A GitHub Action to build and publish Jekyll sites to GitHub Pages
 
-Links:
+Links around this Action:
 
-- [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) on Marketplace.
-- [helaili/jekyll-action](https://github.com/helaili/jekyll-action) repo by [helaili](https://github.com/helaili), a staff member at Github.
+- [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) on the Marketplace
+- [helaili/jekyll-action](https://github.com/helaili/jekyll-action) repo
+    - By [helaili](https://github.com/helaili), a staff member at Github.
+- [entrypoint.sh](https://github.com/helaili/jekyll-action/blob/master/entrypoint.sh)
+    - The shell commands which are run in the build, including use of `jekyll` and `git`. This is useful to see what would happen on the remote environment, for example file and directory references for inputs and outputs. Also it shows that `bundle` is actually used in the container.
 
 
 Note that the action will build from the `master` branch to the `gh-pages` branch and setup Github Pages to point to `gh-pages`. All your edits should be on `master` throughout.
 
-The instructions on the Marketplace page are the same as on the repo README.md and are a good intro. But they leave some details out.
+The instructions on the Marketplace page are the same as on the repo _README.md_ and are a good intro. But they leave some details out.
 
-Follow the steps below to setup.
+Follow the steps below to setup this Action on your own project.
+
 
 ### Setup repo
 
-Create your project on `master`.
+Create your project on `master`. The Action can still be triggered by builds to feature branches, but the Action specifically only builds from content on `master`.
 
-If you click _Use latest version_ in the Marketplace, you get this snippet which should be pasted in your YAML actions file:
+If you click _Use latest version_ in the Marketplace, you get this snippet which should be pasted in your YAML workflow.
 
 ```yaml
 - name: Jekyll Actions
   uses: helaili/jekyll-action@2.0.0
 ```
 
-Create `Gemfile` in the root.
+Create a `Gemfile` in the root of the project.
 
 Create folder containing site contents and also a `_config.yml` file. The folder can be called anything and the plugin will pick it up from the presence of the config.
 
@@ -69,6 +80,16 @@ jobs:
 ```
 {% endraw %}
 
+**Warning** - this Action will run when you build from a feature branch and then it will overwrite content on the `gh-pages` branch. So it is safer to restrict the workflow to only run on builds to `master`. So replace the `on` section with this:
+
+
+```yaml
+on:
+  push:
+    branches:
+      - master
+```
+
 ### Add token
 
 The instructions require you to set the variable `JEKYLL_PAT` using your PAT (Personal Access Token).
@@ -92,7 +113,7 @@ remote_repo="https://${JEKYLL_PAT}@github.com/${GITHUB_REPOSITORY}.git" && \
 
 Go here to the repo's Tokens page under Settings:
 
-- https://github.com/settings/tokens
+- [github.com/settings/tokens](https://github.com/settings/tokens)
 
 Then to the _Personal Access Tokens_ tab.
 
@@ -132,12 +153,14 @@ Go to the environment tab of your repo. Click _View Deployment_ to see the deplo
 
 e.g.
 
-- https://michaelcurrin.github.io/jekyll-actions/
+- [michaelcurrin.github.io/jekyll-actions/](https://michaelcurrin.github.io/jekyll-actions/)
 
 Add this to the URL part of your repo to make it easy to find.
 
 
-### Note
+### Notes
+
+#### Bundler
 
 Rather than installing Jekyll globally locally, you might want to install Jekyll in your project using _Bundler_.
 
@@ -162,3 +185,9 @@ Solutions:
 - Delete Gemfile.lock (this means versions are not locked). The remote build will then use its global Jekyll and not try to use Bundler, even if you use Bundler locally.
 
 Unfortunately, putting Bundler inside Gemfile and running install did not work.
+
+#### Env
+
+If you needed to set values in the environment locally, you could do this with an ignore `.env` file. And make sure that is loaded when running a Jekyll build.
+
+In this case the only environment variable needed is one needed to actually run the action and build to `gh-pages` branch, so this project has no `.env` file.
