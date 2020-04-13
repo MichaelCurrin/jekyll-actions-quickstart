@@ -1,6 +1,9 @@
 name: Publish to GitHub Pages
 
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   jekyll:

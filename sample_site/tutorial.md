@@ -38,10 +38,9 @@ Links around this Action:
 
 Note that the action will build from the `master` branch to the `gh-pages` branch and setup Github Pages to point to `gh-pages`. All your edits should be on `master` throughout.
 
-The instructions on the Marketplace page are the same as on the repo README.md and are a good intro. But they leave some details out.
+The instructions on the Marketplace page are the same as on the repo _README.md_ and are a good intro. But they leave some details out.
 
 Follow the steps below to setup this Action on your own project.
-
 
 
 ### Setup repo
@@ -80,6 +79,16 @@ jobs:
         JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
 ```
 {% endraw %}
+
+**Warning** - this Action will run when you build from a feature branch and then it will overwrite content on the `gh-pages` branch. So it is safer to restrict the workflow to only run on builds to `master`. So replace the `on` section with this:
+
+
+```yaml
+on:
+  push:
+    branches:
+      - master
+```
 
 ### Add token
 
