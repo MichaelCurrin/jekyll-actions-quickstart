@@ -1,11 +1,14 @@
 ---
-title: Action choices
+title: Tutorial
 layout: page
 ---
 
-> Where to find Jekyll actions on Github.
+> Where to find Jekyll actions on Github and how to set one up.
 
-Note that an Action builds inside a container on Github so you need an actions file to provide the steps and either specify shell commands directly or reference an existing action in your action file to use that.
+Note that an Action builds inside a container on Github so you need a workflows file to provide the steps and either specify shell commands directly or reference an existing action in your action file to use that.
+
+There are two Actions listed below - [Starter workflows](#starter-workflows) action and [Jekyll Actions by Helaili](#jekyll-actions-by-helaili).
+
 
 ## Starter workflows
 
@@ -15,19 +18,21 @@ That references [jekyll.yml](https://github.com/actions/starter-workflows/blob/m
 
 It does provide any info though on what you do after a successful build in terms of publishing and viewing results.
 
+This Action was not used for this site and is not covered in more detail.
 
-## Helaili
 
-See this action **Jekyll Actions**.
+## Jekyll Actions by Helaili
+
+Description:
 
 > A GitHub Action to build and publish Jekyll sites to GitHub Pages
 
-Links around this action:
+Links around this Action:
 
-- [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions)
-    - On Github Marketplace.
-- [helaili/jekyll-action](https://github.com/helaili/jekyll-action)
-    - Repo by [helaili](https://github.com/helaili), a staff member at Github.
+- [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) on the Marketplace
+    -  to Marketplace
+- [helaili/jekyll-action](https://github.com/helaili/jekyll-action) repo
+    - By [helaili](https://github.com/helaili), a staff member at Github.
 - [entrypoint.sh](https://github.com/helaili/jekyll-action/blob/master/entrypoint.sh)
     - The shell commands which are run in the build, including use of `jekyll` and `git`. This is useful to see what would happen on the remote environment, for example file and directory references for inputs and outputs. Also it shows that `bundle` is actually used in the container.
 
@@ -36,7 +41,8 @@ Note that the action will build from the `master` branch to the `gh-pages` branc
 
 The instructions on the Marketplace page are the same as on the repo README.md and are a good intro. But they leave some details out.
 
-Follow the steps below to setup.
+Follow the steps below to setup this Action on your own project.
+
 
 ### Setup repo
 
