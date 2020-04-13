@@ -1,8 +1,8 @@
 title: Jekyll Actions Guide
 description: "How to setup Github Pages + Actions for use with Jekyll 4"
 
-url: "https://michaelcurrin.github.io/jekyll-actions/"
-baseurl: "/jekyll-actions"
+url: "https://michaelcurrin.github.io"
+baseurl: "/jekyll-actions-quickstart"
 
 github_username: MichaelCurrin
 
