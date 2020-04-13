@@ -119,7 +119,7 @@ Copy the token value.
 
 Come back to your repo and go to Settings then Secrets.
 
-Create the create named `JEKYLL_PAT` and set the value as copied value.
+Create a token named `JEKYLL_PAT` and set the value as copied value.
 
 ### Build
 
