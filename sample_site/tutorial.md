@@ -7,23 +7,9 @@ layout: page
 
 Note that an Action builds inside a container on Github so you need a workflows file to provide the steps and either specify shell commands directly or reference an existing action in your action file to use that.
 
-There are two Actions listed below - [Starter workflows](#starter-workflows) action and [Jekyll Actions by Helaili](#jekyll-actions-by-helaili).
+This project used _Jekyll Action_, from the Marketplace.
 
-
-## Starter workflows
-
-If you create a new action through the Actions tab, you'll see a Jekyll action there. You might have to click a _more..._ button.
-
-That references [jekyll.yml](https://github.com/actions/starter-workflows/blob/master/ci/jekyll.yml) in the [actions/starter-workflows](https://github.com/actions/starter-workflows) repo.
-
-It does provide any info though on what you do after a successful build in terms of publishing and viewing results.
-
-This Action was not used for this site and is not covered in more detail.
-
-
-## Jekyll Action by Helaili
-
-Description for _Jekyll Action_.
+Description:
 
 > A GitHub Action to build and publish Jekyll sites to GitHub Pages
 
