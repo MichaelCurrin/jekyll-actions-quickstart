@@ -7,9 +7,9 @@
 [![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll%20Actions-2.0.0-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
 
 
-## Learn
+## Demo
 
-See the live demo, which includes a tutorial section:
+See the live demo.
 
 [![Github Pages site](https://img.shields.io/badge/site-Github_Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
 
@@ -19,6 +19,14 @@ See the live demo, which includes a tutorial section:
 Create your own repo like this using the button below and follow the instructions on this page.
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-green.svg?style=for-the-badge)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
+
+
+## Tutorial
+
+This project was developed as part of writing step-by-step guide for the Jekyll docs. Here it is:
+
+- [Github Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) guide for Jekyll.
+
 
 ## Documentation
 
@@ -37,7 +45,7 @@ Check the environment tab to see the status and the URL.
 
 #### Installation
 
-Ensure you have a Ruby and Bundler installed.
+Ensure you have a Ruby and [Bundler](https://bundler.io) installed.
 
 Clone the repo.
 
@@ -68,9 +76,9 @@ Alternatively, keep the file either build will a global (user-level) Jekyll. Or 
 
 ### Excluding
 
-The Makefile, LICENSE, README do not have to be excluded as this site is setup to build from a subdirectory. Otherwise they would have to be added.
+The Makefile, LICENSE, README.md do not have to be excluded as this site is setup to build from a subdirectory. Otherwise they would have to be added.
 
-The Gemfile and Gemfile.lock are always ignored by Jekyll 4.
+The `Gemfile` and `Gemfile.lock` are always ignored by Jekyll 4.
 
 
 ## License
