@@ -7,30 +7,36 @@
 [![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll%20Actions-2.0.0-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
 
 
-## Demo
+## How can I use Jekyll with Github Actions?
 
-See the live demo.
-
-[![Github Pages site](https://img.shields.io/badge/site-Github_Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
-
-
-## Create from template
-
-Create your own repo like this using the button below and follow the instructions on this page.
-
-[![Use this template](https://img.shields.io/badge/Use_this_template-green.svg?style=for-the-badge)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
-
-
-## Tutorial
+### Tutorial
 
 This project was developed as part of writing step-by-step guide for the Jekyll docs. Here it is:
 
 - [Github Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) guide for Jekyll.
 
 
-## Documentation
+### Demo
 
-### Remote setup
+See this project's live demo on Github Pages.
+
+[![Github Pages site](https://img.shields.io/badge/site-Github_Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
+
+
+### Create from template
+
+Create your own repo like this one using the button below and the instructions on this page.
+
+[![Use this template](https://img.shields.io/badge/Use_this_template-green.svg?style=for-the-badge)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
+
+
+## Requirements
+
+- [Ruby](https://www.ruby-lang.org/)
+- [Bundler](https://bundler.io)
+
+
+## Remote setup
 
 Add this repo to your Github repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get build from scratch.
 
@@ -38,33 +44,35 @@ Follow the instructions in the tutorial page's _Add token_ section to add `JEKYL
 
 Save a file or push a commit then watch the site get built to Github Pages.
 
-Check the environment tab to see the status and the URL.
+Check the _environment_ tab to see the status and the URL.
 
+## Installation
+> Local setup.
 
-### Local setup
-
-#### Installation
-
-Ensure you have a Ruby and [Bundler](https://bundler.io) installed.
-
-Clone the repo.
-
-Install dependencies with Bundler.
-
-```sh
-$ make install
-```
+1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/#package-management-systems).
+2. Install [Bundler](https://bundler.io) as a user gem.
+    ```sh
+    $ gem install bundler --user
+    ```
+3. Clone the repo.
+4. Install project dependencies using Bundler. This will include Jekyll 4.
+    ```sh
+    $ make install
+    ```
 
 #### Usage
+> Run locally
 
-Start a development server with Jekyll.
+Start a development server using the project Jekyll.
 
 ```sh
-make serve
+$ make serve
 ```
 
 
 ### Development
+
+<!-- If you've forked this project, you can delete this Development section. -->
 
 ### Note on locking gems
 
@@ -84,3 +92,7 @@ The `Gemfile` and `Gemfile.lock` are always ignored by Jekyll 4.
 ## License
 
 Released under [MIT](/LICENSE).
+
+Feel free to modify and reuse this project. You are required to include the license when using this code.
+
+Please link back to this repo as well.
