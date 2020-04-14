@@ -7,16 +7,22 @@
 [![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll%20Actions-2.0.0-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
 
 
-See the live demo which includes a tutorial page:
+## Learn
+
+See the live demo, which includes a tutorial section:
 
 [![Github Pages site](https://img.shields.io/badge/site-Github%20Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
+
+
+## Create from template
 
 Create your own repo like this using the button below and follow the instructions on this page.
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-green.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
 
+## Documentation
 
-## Remote setup
+### Remote setup
 
 Add this repo to your Github repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get build from scratch.
 
@@ -27,9 +33,9 @@ Save a file or push a commit then watch the site get built to Github Pages.
 Check the environment tab to see the status and the URL.
 
 
-## Local setup
+### Local setup
 
-### Installation
+#### Installation
 
 Ensure you have a Ruby and Bundler installed.
 
@@ -41,7 +47,7 @@ Install dependencies with Bundler.
 $ make install
 ```
 
-### Usage
+#### Usage
 
 Start a development server with Jekyll.
 
@@ -50,7 +56,7 @@ make serve
 ```
 
 
-## Development
+### Development
 
 ### Note on locking gems
 
