@@ -11,14 +11,14 @@
 
 See the live demo, which includes a tutorial section:
 
-[![Github Pages site](https://img.shields.io/badge/site-Github%20Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
+[![Github Pages site](https://img.shields.io/badge/site-Github_Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
 
 
 ## Create from template
 
 Create your own repo like this using the button below and follow the instructions on this page.
 
-[![Use this template](https://img.shields.io/badge/Use_this_template-green.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
+[![Use this template](https://img.shields.io/badge/Use_this_template-green.svg?style=for-the-badge)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
 
 ## Documentation
 
