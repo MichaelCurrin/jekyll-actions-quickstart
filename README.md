@@ -11,9 +11,9 @@
 
 ### Tutorial
 
-This project was developed as part of writing step-by-step guide for the Jekyll docs. Here it is:
+This project was developed as part of writing step-by-step guide for the [Jekyll docs](https://jekyllrb.com/docs/). Here it is:
 
-- [Github Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) guide for Jekyll.
+- [Github Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) for Jekyll + Github Pages continuous integration.
 
 
 ### Demo
