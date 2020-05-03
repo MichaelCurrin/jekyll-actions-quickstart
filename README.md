@@ -91,8 +91,6 @@ The `Gemfile` and `Gemfile.lock` are always ignored by Jekyll 4.
 
 ## License
 
-Released under [MIT](/LICENSE).
-
-Feel free to modify and reuse this project. You are required to include the license when using this code.
-
-Please link back to this repo as well.
+- Released under [MIT](/LICENSE).
+- Feel free to modify and reuse this project. You are required to include the license when using this code. Copy `LICENSE` to `LICENSE-source` and then modify `LICENSE` with your own details.
+- Please link back to this repo as well.
