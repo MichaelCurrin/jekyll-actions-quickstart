@@ -6,19 +6,25 @@
 [![Made with Github Actions](https://img.shields.io/badge/Made_with-Github%20Actions-blue.svg)](https://help.github.com/en/actions)
 [![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll_Actions-2.0.2-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
 
+## Purpose
+
+A live demo and introduction around deploying Jekyll 4 to Github Pages, using Github Actions and the [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) action.
+
 
 ## How can I use Jekyll 4 with Github Actions?
 
 ### Tutorial
 
-This project was developed as part of writing step-by-step guide for the [Jekyll docs](https://jekyllrb.com/docs/). Here it is:
+This project was developed as part of writing step-by-step guide for the [Jekyll docs](https://jekyllrb.com/docs/). 
+
+Here it is:
 
 - [Github Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) for Jekyll + Github Pages continuous integration.
 
 
 ### Demo
 
-See this project's live demo on Github Pages.
+See this project's live demo hosted on Github Pages:
 
 [![Github Pages site](https://img.shields.io/badge/site-Github_Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
 
