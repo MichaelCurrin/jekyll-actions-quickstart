@@ -2,12 +2,12 @@
 > How to setup Github Pages + Actions for use with Jekyll 4
 
 [![Jekyll site CI](https://github.com/MichaelCurrin/jekyll-actions-quickstart/workflows/Jekyll%20site%20CI/badge.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/actions)
-[![Made with Github Pages](https://img.shields.io/badge/Made%20with-Github%20Pages-blue.svg)](https://pages.github.com/)
-[![Made with Github Actions](https://img.shields.io/badge/Made%20with-Github%20Actions-blue.svg)](https://help.github.com/en/actions)
-[![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll%20Actions-2.0.0-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
+[![Made with Github Pages](https://img.shields.io/badge/Made_with-Github%20Pages-blue.svg)](https://pages.github.com/)
+[![Made with Github Actions](https://img.shields.io/badge/Made_with-Github%20Actions-blue.svg)](https://help.github.com/en/actions)
+[![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll_Actions-2.0.2-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
 
 
-## How can I use Jekyll with Github Actions?
+## How can I use Jekyll 4 with Github Actions?
 
 ### Tutorial
 
@@ -38,19 +38,18 @@ Create your own repo like this one using the button below and the instructions o
 
 ## Remote setup
 
-Add this repo to your Github repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get build from scratch.
+1. Add this repo to your Github repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get build from scratch.
+2. Follow the instructions in the tutorial page's _Add token_ section to add `JEKYLL_PAT` to the environment as Secret, so you have a Github Auth token created and added to your repo.
+3. Save a file or push a commit then watch the site get built to Github Pages.
+4. Check the _environment_ tab to see the status and the URL.
 
-Follow the instructions in the tutorial page's _Add token_ section to add `JEKYLL_PAT` to the environment as Secret, so you have a Github Auth token created and added to your repo.
 
-Save a file or push a commit then watch the site get built to Github Pages.
+## Run locally
 
-Check the _environment_ tab to see the status and the URL.
-
-## Installation
-> Local setup.
+### Installation
 
 1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/#package-management-systems).
-2. Install [Bundler](https://bundler.io) as a user gem.
+2. Install Bundler as a user gem.
     ```sh
     $ gem install bundler --user
     ```
@@ -60,10 +59,9 @@ Check the _environment_ tab to see the status and the URL.
     $ make install
     ```
 
-#### Usage
-> Run locally
+### Usage
 
-Start a development server using the project Jekyll.
+Start a development server using the project-scoped Jekyll.
 
 ```sh
 $ make serve
@@ -72,7 +70,7 @@ $ make serve
 
 ### Development
 
-<!-- If you've forked this project, you can delete this Development section. -->
+<!-- If you've forked this project or used the template so you can make a new site, you can delete this Development section. -->
 
 ### Note on locking gems
 
