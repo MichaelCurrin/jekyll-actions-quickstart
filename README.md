@@ -23,7 +23,7 @@ This project was developed as part of writing a step-by-step guide for the Jekyl
 
 Here is the link:
 
-- [Github Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/)
+- [Jekyll CI Github Actions tutorial](https://jekyllrb.com/docs/continuous-integration/github-actions/)
 
 
 ### Demo
