@@ -23,4 +23,4 @@ This project serves the following purposes:
 - **[Tutorial]({% link tutorial.md %})**
     - Instructions and resources to add Actions to your Jekyll site.
 - **Live demo**
-    - This site shows the result of a static site built with Jekyll Actions, using Jekyll 4 and a custom plugin called [Time ago]({% link time_ago.md %}).
+    - This site shows the result of a static site built with Jekyll Actions, using Jekyll 4 and a custom plugin called [Time ago]({% link time-ago.md %}).
