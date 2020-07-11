@@ -14,12 +14,20 @@ layout: page
 
 ## Actions
 
-Some available actions for your workflow. Also try a [Jekyll](https://github.com/marketplace?type=actions&query=jekyll) search in the Github Marketplace.
+Some available actions for your workflow. 
+
+Also try a [Jekyll](https://github.com/marketplace?type=actions&query=jekyll) search in the Github Marketplace.
 
 
-### Jekyll Actions
+### Jekyll + GitHub Pages actions
 
-See [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) action on Marketplace.
+Links are for the GH Actions Marketplace
+
+- [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) - used by this project. It is a docker-based action.
+- [Jekyll Action TS](https://github.com/marketplace/actions/jekyll-action-ts) - a fork of the above but with TypeScript and without Docker, so it is lighter.
+- [Jekyll Deploy GH Pages](https://github.com/marketplace/actions/jekyll-deploy-gh-pages)
+
+
 
 ### Starter workflows
 
