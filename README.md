@@ -2,9 +2,12 @@
 > How to setup Github Pages + Actions for use with Jekyll 4
 
 [![Jekyll site CI](https://github.com/MichaelCurrin/jekyll-actions-quickstart/workflows/Jekyll%20site%20CI/badge.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/actions)
-[![Made with Github Pages](https://img.shields.io/badge/Made_with-Github%20Pages-blue.svg)](https://pages.github.com/)
-[![Made with Github Actions](https://img.shields.io/badge/Made_with-Github%20Actions-blue.svg)](https://help.github.com/en/actions)
+[![Made with Github Pages](https://img.shields.io/badge/Made_with-Github_Pages-blue.svg)](https://pages.github.com/)
+[![Made with Github Actions](https://img.shields.io/badge/Made_with-Github_Actions-blue.svg)](https://help.github.com/en/actions)
 [![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll_Actions-2.0.2-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
+
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/jekyll-actions-quickstart)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/tags/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 
 ## Purpose
@@ -31,7 +34,6 @@ Here is the link:
 See this project's live demo hosted on Github Pages:
 
 [![Github Pages site](https://img.shields.io/badge/site-Github_Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
-
 
 ### Create from template
 
@@ -63,7 +65,7 @@ Create your own repo like this one using the button below and the instructions o
     ```sh
     $ gem install bundler --user
     ```
-3. Clone the repo.
+3. Clone the repo or your copy of the template.
 4. Install project dependencies using Bundler. This will include Jekyll 4.
     ```sh
     $ make install
@@ -76,7 +78,6 @@ Start a development server using the project-scoped Jekyll.
 ```sh
 $ make serve
 ```
-
 
 ### Development
 
@@ -92,7 +93,7 @@ Alternatively, keep the file either build will a global (user-level) Jekyll. Or 
 
 ### Excluding
 
-The Makefile, LICENSE, README.md do not have to be excluded as this site is setup to build from a subdirectory. Otherwise they would have to be added.
+The `Makefile`, `LICENSE`, `README.md` do not have to be excluded as this site is setup to build from a subdirectory. Otherwise they would have to be added.
 
 The `Gemfile` and `Gemfile.lock` are always ignored by Jekyll 4.
 
@@ -100,5 +101,5 @@ The `Gemfile` and `Gemfile.lock` are always ignored by Jekyll 4.
 ## License
 
 - Released under [MIT](/LICENSE).
-- Feel free to modify and reuse this project. You are required to include the license when using this code. Copy `LICENSE` to `LICENSE-source` and then modify `LICENSE` with your own details.
+- Feel free to modify and reuse this project. You are required to include the license when using this code. Copy `LICENSE` to `LICENSE-source` and then modify `LICENSE` with your own name.
 - Please link back to this repo as well.
