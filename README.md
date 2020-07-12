@@ -1,7 +1,8 @@
 # Jekyll Actions Quickstart
 > How to setup Github Pages + Actions for use with Jekyll 4
 
-[![Jekyll site CI](https://github.com/MichaelCurrin/jekyll-actions-quickstart/workflows/Jekyll%20site%20CI/badge.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/actions)
+[![Build and Deploy GH Pages](https://github.com/MichaelCurrin/jekyll-actions-quickstart/workflows/Build%20and%20Deploy%20GH%20Pages/badge.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/actions)
+
 [![Made with Github Pages](https://img.shields.io/badge/Made_with-Github_Pages-blue.svg)](https://pages.github.com/)
 [![Made with Github Actions](https://img.shields.io/badge/Made_with-Github_Actions-blue.svg)](https://help.github.com/en/actions)
 [![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll_Actions-2.0.2-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
