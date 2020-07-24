@@ -13,7 +13,7 @@
 
 ## Purpose
 
-A live demo and introduction around deploying Jekyll 4 to GitHub Pages, using GitHub Actions and the [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) action.
+A live demo and introduction around deploying Jekyll 4 to GitHub Pages - using GitHub Actions and the [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) action.
 
 
 ## How can I use Jekyll 4 with GitHub Actions?
@@ -39,7 +39,7 @@ See this project's live demo hosted on Github Pages:
 
 ### Create from template
 
-Create your own repo like this one using the button below and the instructions on this page.
+Create your own repo like this one using the button below. Then continue following the setup and run instructions on this page.
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-green.svg?style=for-the-badge)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
 
