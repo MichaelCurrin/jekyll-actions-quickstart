@@ -51,9 +51,14 @@ Create your own repo like this one using the button below. Then continue followi
 
 
 ## Remote setup
-> How to setup as a GitHub Pages site
 
-1. Add this repo to your GitHub repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get build from scratch.
+The part which makes this project run with GitHub Actions and not the standard GH Pages flow is the workflow file. You can leave this as is.
+
+- [.github/workflows/jekyll.yml](/.github/workflows/jekyll.yml)
+
+How to setup as a GitHub Pages site:
+
+1. Add this repo to your GitHub repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get built from scratch.
 2. Follow the instructions in the tutorial page's _Add token_ section to add `JEKYLL_PAT` to the environment as Secret, so you have a Github Auth token created and added to your repo.
 3. Save a file or push a commit then watch the site get built to Github Pages.
 4. Check the _environment_ tab to see the status and the URL.
