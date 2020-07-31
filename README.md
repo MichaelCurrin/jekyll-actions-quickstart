@@ -20,7 +20,6 @@ A live demo and introduction around deploying Jekyll 4 to GitHub Pages - using G
 
 Follow one of the approaches below to learn how it works and set up your own site and workflow.
 
-
 ### Tutorial
 
 This project was developed as part of writing a step-by-step guide for the Jekyll site's documentation. 
@@ -29,19 +28,17 @@ Here is the link:
 
 - [Jekyll CI Github Actions tutorial](https://jekyllrb.com/docs/continuous-integration/github-actions/)
 
-
 ### Demo
 
 See this project's live demo hosted on Github Pages:
 
 [![Github Pages site](https://img.shields.io/badge/site-Github_Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
 
-
 ### Create from template
 
 Create your own repo like this one using the button below. Then continue following the setup and run instructions on this page.
 
-[![Use this template](https://img.shields.io/badge/Use_this_template-green.svg?style=for-the-badge)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
+[![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
 
 
 ## Requirements
@@ -52,16 +49,17 @@ Create your own repo like this one using the button below. Then continue followi
 
 ## Remote setup
 
-The part which makes this project run with GitHub Actions and not the standard GH Pages flow is the workflow file. You can leave this as is.
-
-- [.github/workflows/jekyll.yml](/.github/workflows/jekyll.yml)
+The part which makes this project run on GitHub Actions and not the standard GH Pages flow is the workflow file - see [jekyll.yml](/.github/workflows/jekyll.yml). You do not need to modify this file, but you do need to set a token for it to use - see below.
 
 How to setup as a GitHub Pages site:
 
 1. Add this repo to your GitHub repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get built from scratch.
-2. Follow the instructions in the tutorial page's _Add token_ section to add `JEKYLL_PAT` to the environment as Secret, so you have a Github Auth token created and added to your repo.
-3. Save a file or push a commit then watch the site get built to Github Pages.
-4. Check the _environment_ tab to see the status and the URL.
+1. Follow the instructions in the tutorial page's _Add token_ section to add `JEKYLL_PAT` to the environment as Secret, so you have a Github Auth token created and added to your repo.
+1. Save a file or push a commit
+1. Go to the _Actions_ tab of your repo to see the workflow running. On success, it will generate the site, commit to `gh-pages` branch and push the site on GH Pages if not already set up in Settings section of your repo.
+1. Check the _environment_ section to see the status and the GH Pages URL.
+
+Your GH Pages site is live and now rebuilds and deploys on a commit or push - using custom gems.
 
 
 ## Run locally
