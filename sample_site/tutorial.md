@@ -8,14 +8,14 @@ layout: page
 
 ## Tutorial on Jekyll docs
 
-See the [Github Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) doc on the Jekyll site.
+To learn how to setup a Jekyll / GitHub Actions / GitHub Pages integration, see the [Github Actions](https://jekyllrb.com/docs/continuous-integration/github-actions/) guide on the Jekyll docs site.
 
-This project was developed as part of writing that step-by-step guide.
+This project was actually developed as part of the processing of writing that step-by-step guide and there is a link at the end of the doc back to this repo.
 
 
 ## Extra details
 
-Some details not mentioned in that doc.
+Some details not mentioned in that guide but which I still want to share.
 
 - Links
     - See [helaili/jekyll-action](https://github.com/helaili/jekyll-action) repo which by [helaili](https://github.com/helaili), a staff member at GitHub. The instructions there cover optional input values.
