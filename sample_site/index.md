@@ -2,7 +2,8 @@
 layout: home
 ---
 
-[![Github repo](https://img.shields.io/github/stars/MichaelCurrin/jekyll-actions-quickstart?style=social)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/)
+[![Stars](https://img.shields.io/github/stars/MichaelCurrin/jekyll-actions-quickstart?style=social)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/)
+[![Forks](https://img.shields.io/github/forks/MichaelCurrin/jekyll-actions-quickstart?style=social)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/)
 
 [![Made with Github Pages](https://img.shields.io/badge/Made_with-Github_Pages-blue.svg)](https://pages.github.com/)
 [![Made with Github Actions](https://img.shields.io/badge/Made_with-Github_Actions-blue.svg)](https://help.github.com/en/actions)
