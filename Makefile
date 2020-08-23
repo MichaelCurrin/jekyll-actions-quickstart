@@ -1,8 +1,11 @@
+default: install
+
 help:
 	@egrep '(^\S)|^$$' Makefile
 
 install:
-	bundle install --path vendor/bundle
+	bundle config set --local path vendor/bundle
+	bundle install
 
 upgrade:
 	bundle update
