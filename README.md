@@ -46,9 +46,10 @@ Create your own repo like this one using the button below. Then continue followi
 - [Bundler](https://bundler.io)
 
 
-## Remote setup
+## Deployment
+> How to deploy this project using GH Actions and GH Pages
 
-The part which makes this project run on GitHub Actions and not the standard GH Pages flow is the workflow file - see [jekyll.yml](/.github/workflows/jekyll.yml). You do not need to modify this file, but you do need to set a token for it to use - see below.
+The part which makes this project run on GitHub Actions is the workflow file - see [jekyll.yml](/.github/workflows/jekyll.yml). You do _not_ need to modify that file, but, you do need to _set a token_ for it to use - see below.
 
 How to setup as a GitHub Pages site:
 
@@ -59,6 +60,8 @@ How to setup as a GitHub Pages site:
 1. Check the _environment_ section to see the status and the GH Pages URL.
 
 Your GH Pages site is live and now rebuilds and deploys on a commit or push - using custom gems.
+
+Note: The standard GitHub Pages flow actually does run behind the scenes - it just sees `gh-pages` as static HTML assets with no Jekyll config, so it serve the content without processing it through Jekyll.
 
 
 ## Run locally
