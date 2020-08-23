@@ -73,12 +73,23 @@ Your GH Pages site is live and now rebuilds and deploys on a commit or push - us
 3. Clone the repo or your repo copied from the template.
 4. Install project dependencies using Bundler. This will include Jekyll 4.
     ```sh
+    $ bundle config set --local path vendor/bundle
+    $ bundle install
+    ```
+    If you like `make` on Linux or macOS, then simply run this instead:
+    ```sh
     $ make install
     ```
 
 ### Usage
 
-Start a development server using the project-scoped Jekyll.
+Start a development server using the project-scoped Jekyll (ignoring any globally-installed Jekyll gem).
+
+```sh
+$ bundle exec jekyll serve --source sample_site --destination build/ --livereload --trace
+```
+
+Or, using `make`:
 
 ```sh
 $ make serve
@@ -99,9 +110,9 @@ Alternatively, keep the file either build will a global (user-level) Jekyll. Or 
 
 ### Excluding
 
-The `Makefile`, `LICENSE`, `README.md` do not have to be excluded as this site is setup to build from a subdirectory. Otherwise they would have to be added.
+The `Makefile`, `LICENSE` and `README.md` files do not have to be excluded, as this site is setup to build from a _subdirectory_. Otherwise they would have to be added to the ignore list.
 
-The `Gemfile` and `Gemfile.lock` are always ignored by Jekyll 4.
+The `Gemfile` and `Gemfile.lock` are _always_ ignored by Jekyll 4.
 
 
 ## License
