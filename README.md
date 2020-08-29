@@ -49,19 +49,21 @@ Create your own repo like this one using the button below. Then continue followi
 ## Deployment
 > How to deploy this project using GH Actions and GH Pages
 
-The part which makes this project run on GitHub Actions is the workflow file - see [jekyll.yml](/.github/workflows/jekyll.yml). You do _not_ need to modify that file, but, you do need to _set a token_ for it to use - see below.
+The part which makes this project run on GitHub Actions is the workflow file - see [jekyll.yml](/.github/workflows/jekyll.yml). You do _not_ need to modify that file. But, you do need to set a GH API **token** for it to use. See below.
 
 How to setup as a GitHub Pages site:
 
-1. Add this repo to your GitHub repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get built from scratch.
+1. Add this repo to your GitHub repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get built from scratch later.
 1. Follow the instructions in the tutorial page's _Add token_ section to add `JEKYLL_PAT` to the environment as Secret, so you have a Github Auth token created and added to your repo.
-1. Save a file or push a commit
-1. Go to the _Actions_ tab of your repo to see the workflow running. On success, it will generate the site, commit to `gh-pages` branch and push the site on GH Pages if not already set up in Settings section of your repo.
+1. Save a file or push a commit.
+1. Go to the _Actions_ tab of your repo to see the workflow running. 
+    - On success, it will generate the site, commit to `gh-pages` branch and make the content available GH Pages.
+    - On the very first run, you'll see a success but not actually have the site live. So then you need to go into the Settings of your repo and turn GitHub Pages **off** and then on again (for `gh-pages` branch). This has been my experience.
 1. Check the _environment_ section to see the status and the GH Pages URL.
 
-Your GH Pages site is live and now rebuilds and deploys on a commit or push - using custom gems.
+Your GH Pages site is live on GH Pages and now rebuilds and deploys on a commit or push - using custom gems.
 
-Note: The standard GitHub Pages flow actually does run behind the scenes - it just sees `gh-pages` as static HTML assets with no Jekyll config, so it serve the content without processing it through Jekyll.
+Note: The _standard_ GitHub Pages flow actually still run behind the scenes in addition to the GH Actions build (which actually can't serve anything alone). The GitHub Pages service just sees `gh-pages` branch as static HTML assets with no Jekyll config, so it will serve the content without processing it through Jekyll.
 
 
 ## Run locally
