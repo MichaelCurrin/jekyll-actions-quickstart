@@ -73,7 +73,7 @@ Note: The _standard_ GitHub Pages flow actually still run behind the scenes in a
 1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/#package-management-systems).
 2. Install Bundler as a user gem.
     ```sh
-    $ gem install bundler --user-level
+    $ gem install bundler --user-install
     ```
 3. Clone the repo or your repo copied from the template.
 4. Install project dependencies using Bundler. This will include Jekyll 4.
