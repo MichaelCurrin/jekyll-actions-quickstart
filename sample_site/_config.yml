@@ -1,12 +1,13 @@
+## Site metadata ##
+
 title: Jekyll Actions Guide
-description: "How to setup Github Pages + Actions for use with Jekyll 4"
+description: How to setup GH Pages + GH Actions for use with Jekyll 4
+
+### Built settings ###
 
 url: "https://michaelcurrin.github.io"
 baseurl: "/jekyll-actions-quickstart"
 
 github_username: MichaelCurrin
 
-markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-timeago
