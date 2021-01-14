@@ -32,13 +32,36 @@ Here is the link:
 
 See this project's live demo hosted on Github Pages:
 
+<div align="center">
+    
 [![Github Pages site](https://img.shields.io/badge/site-Github_Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
+
+</div>
 
 ### Create from template
 
 Create your own repo like this one using the button below. Then continue following the setup and run instructions on this page.
 
+<div align="center">
+
 [![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/generate)
+
+</div>
+
+### Comparing approaches
+
+There are many ways to deploy a Jekyll site on GH Pages. I cover some in my [Code Cookbook](https://michaelcurrin.github.io/code-cookbook/recipes/ci-cd/github-actions/workflows/jekyll/).
+
+Those approaches have different levels of complexity:
+
+- You use an all-one Jekyll + GH Pages action, like the one in this project and tutorial.
+- Or use a separate action for Jekyll and then another for GH Pages for more modularity (you can swap out one action easily and you can reuse the GH PAges deploy action for other projects like for React).
+- Or you can avoid premade actions and write all the low-level code yourself (not recommended.
+
+The approaches have varying levels of security. 
+
+- Some flows use the GitHub-generated `GITHUB_TOKEN`, which only has access to one repo during workflow run and is _very_ secure.
+- Others like the one used in project use a user-generated Personal Access Token which has access to update _all_ your public repos and so is _less_ secure.
 
 
 ## Requirements
@@ -125,6 +148,6 @@ The `Gemfile` and `Gemfile.lock` are _always_ ignored by Jekyll 4.
 
 ## License
 
-- Released under [MIT](/LICENSE).
+- Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).
 - Feel free to modify and reuse this project. You are required to include the license when using this code. Copy `LICENSE` to `LICENSE-source` and then modify `LICENSE` with your own name.
 - Please link back to this repo as well.
