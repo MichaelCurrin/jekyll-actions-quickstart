@@ -6,12 +6,13 @@ on:
       - master
 
 jobs:
-  jekyll:
+  build-deploy:
     runs-on: ubuntu-16.04
 
     steps:
-      - uses: actions/checkout@v2
-   
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
       - name: Get cached gems
         uses: actions/cache@v2
         with:
