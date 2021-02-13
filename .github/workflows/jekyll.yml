@@ -19,8 +19,8 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-     
-      - uses: helaili/jekyll-action@2.0.2
-        env:
-          # Ideally use GITHUB_TOKEN but it gives error for this action.
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+
+      - name: Build and deploy
+        uses: helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
