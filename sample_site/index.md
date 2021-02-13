@@ -7,8 +7,6 @@ layout: home
 [![forks - jekyll-actions-quickstart](https://img.shields.io/github/forks/MichaelCurrin/jekyll-actions-quickstart?style=social)](https://github.com/MichaelCurrin/jekyll-actions-quickstart)
 
 [![Jekyll](https://img.shields.io/badge/jekyll-4.x-blue?logo=jekyll&logoColor=white)](https://jekyllrb.com)
-[![Made with GitHub Pages](https://img.shields.io/badge/Made_with-GitHub_Pages-blue)](https://pages.github.com/)
-[![Made with GitHub Actions](https://img.shields.io/badge/Made_with-GitHub_Actions-blue?logo=githubactions&logoColor=white)](https://help.github.com/en/actions)
 [![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll_Actions-2.x-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
 
 
