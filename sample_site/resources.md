@@ -3,20 +3,20 @@ title: Resources
 layout: page
 ---
 
-> Some recommended links related to Github Actions and Jekyll.
+> Some recommended links related to GitHub Actions and Jekyll.
 
 
-## Github Actions docs
+## GitHub Actions docs
 
-- [Actions](https://github.com/features/actions) listed under Github features.
-- [Actions](https://help.github.com/en/actions) under Github help.
+- [Actions](https://github.com/features/actions) listed under GitHub features.
+- [Actions](https://help.github.com/en/actions) under GitHub help.
 
 
 ## Actions
 
-Some available actions for your workflow. 
+Some available actions for your workflow.
 
-Also try a [Jekyll](https://github.com/marketplace?type=actions&query=jekyll) search in the Github Marketplace.
+Also try a [Jekyll](https://github.com/marketplace?type=actions&query=jekyll) search in the GitHub Marketplace.
 
 
 ### Jekyll + GitHub Pages actions

@@ -27,15 +27,15 @@ This project was developed as part of writing a step-by-step guide for the Jekyl
 
 Here is the link:
 
-- [Jekyll CI Github Actions tutorial](https://jekyllrb.com/docs/continuous-integration/github-actions/)
+- [Jekyll CI GitHub Actions tutorial](https://jekyllrb.com/docs/continuous-integration/github-actions/)
 
 ### Demo
 
-See this project's live demo hosted on Github Pages:
+See this project's live demo hosted on GitHub Pages:
 
 <div align="center">
-    
-[![Github Pages site](https://img.shields.io/badge/site-Github_Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
+
+[![GitHub Pages site](https://img.shields.io/badge/site-GitHub_Pages-blue?style=for-the-badge)](https://michaelcurrin.github.io/jekyll-actions-quickstart/)
 
 </div>
 
@@ -59,7 +59,7 @@ Those approaches have different levels of complexity:
 - Or use a separate action for Jekyll and then another for GH Pages for more modularity (you can swap out one action easily and you can reuse the GH PAges deploy action for other projects like for React).
 - Or you can avoid premade actions and write all the low-level code yourself (not recommended.
 
-The approaches have varying levels of security. 
+The approaches have varying levels of security.
 
 - Some flows use the GitHub-generated `GITHUB_TOKEN`, which only has access to one repo during workflow run and is _very_ secure.
 - Others like the one used in project use a user-generated Personal Access Token which has access to update _all_ your public repos and so is _less_ secure.
@@ -81,7 +81,7 @@ The part which makes this project run on GitHub Actions is the workflow file - s
 How to setup as a GitHub Pages site:
 
 1. Add this repo to your GitHub repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get built from scratch later.
-1. Follow the instructions in the tutorial page's _Add token_ section to add `JEKYLL_PAT` to the environment as Secret, so you have a Github Auth token created and added to your repo.
+1. Follow the instructions in the tutorial page's _Add token_ section to add `JEKYLL_PAT` to the environment as Secret, so you have a GitHub Auth token created and added to your repo.
 1. Save a file or push a commit.
 1. Go to the _Actions_ tab of your repo to see the workflow running.
     - On success, it will generate the site, commit to `gh-pages` branch and make the content available GH Pages.
@@ -136,7 +136,7 @@ $ make serve
 
 For this simple demo project with few dependencies, leaving out the `Gemfile.lock` file altogether is reasonable.
 
-Note that `Gemfile.lock` must remain as file **ignored** by `git` to avoid build errors. This because an install locally with `bundle` will put `bundler` as a line in `Gemfile.lock`, while `bundler` use will cause an error on the remote build as its not available (at least in the container used by the chosen Github Action here.
+Note that `Gemfile.lock` must remain as file **ignored** by `git` to avoid build errors. This because an install locally with `bundle` will put `bundler` as a line in `Gemfile.lock`, while `bundler` use will cause an error on the remote build as its not available (at least in the container used by the chosen GitHub Action here.
 
 Alternatively, keep the file either build will a global (user-level) Jekyll. Or keep building a `Gemfile.lock` remember to manually remove the `bundler` reference.
 
