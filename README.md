@@ -1,12 +1,12 @@
 # Jekyll Actions Quickstart
 > How to setup GH Pages + GH Actions for use with Jekyll 4
 
-[![Build and Deploy GH Pages](https://github.com/MichaelCurrin/jekyll-actions-quickstart/workflows/Build%20and%20Deploy%20GH%20Pages/badge.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/actions)
+[![Build and Deploy GH Pages](https://github.com/MichaelCurrin/jekyll-actions-quickstart/workflows/Build%20and%20Deploy%20GH%20Pages/badge.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/actions?query=workflow:"Build+and+Deploy+GH+Pages")
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/jekyll-actions-quickstart)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/tags/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 [![Made with GitHub Pages](https://img.shields.io/badge/Made_with-GitHub_Pages-blue.svg)](https://pages.github.com/)
-[![Made with GitHub Actions](https://img.shields.io/badge/Made_with-GitHub_Actions-blue.svg)](https://help.github.com/en/actions)
+[![Made with GH Actions](https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white)](https://github.com/features/actions)
 
 [![Jekyll](https://img.shields.io/badge/jekyll-4.x-blue?logo=jekyll&logoColor=white)](https://jekyllrb.com)
 [![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll_Actions-2.x-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
