@@ -14,7 +14,9 @@
 
 ## Purpose
 
-A live demo and introduction around deploying Jekyll 4 to GitHub Pages - using GitHub Actions and the [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) action.
+A live demo and introduction around deploying Jekyll 4 to GitHub Pages - using a GitHub Actions workflow and the [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) action.
+
+If you are new to GH Actions, see links and code snippets in my [Workflow Builder](https://michaelcurrin.github.io/workflow-builder/) project.
 
 
 ## How can I use Jekyll 4 with GitHub Actions?
