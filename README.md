@@ -3,12 +3,13 @@
 
 [![Build and Deploy GH Pages](https://github.com/MichaelCurrin/jekyll-actions-quickstart/workflows/Build%20and%20Deploy%20GH%20Pages/badge.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/actions)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/jekyll-actions-quickstart)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/tags/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
-[![Jekyll](https://img.shields.io/badge/Jekyll-4-blue?logo=jekyll&logoColor=white)](https://jekyllrb.com)
-[![Made with Github Pages](https://img.shields.io/badge/Made_with-GitHub_Pages-blue.svg)](https://pages.github.com/)
-[![Made with Github Actions](https://img.shields.io/badge/Made_with-GitHub_Actions-blue.svg)](https://help.github.com/en/actions)
-[![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll_Actions-2.0.2-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
+[![Made with GitHub Pages](https://img.shields.io/badge/Made_with-GitHub_Pages-blue.svg)](https://pages.github.com/)
+[![Made with GitHub Actions](https://img.shields.io/badge/Made_with-GitHub_Actions-blue.svg)](https://help.github.com/en/actions)
+
+[![Jekyll](https://img.shields.io/badge/jekyll-4.x-blue?logo=jekyll&logoColor=white)](https://jekyllrb.com)
+[![Made with Jekyll Actions](https://img.shields.io/badge/Jekyll_Actions-2.x-blue.svg)](https://github.com/marketplace/actions/jekyll-actions)
 
 
 ## Purpose
@@ -107,7 +108,7 @@ Note: The _standard_ GitHub Pages flow actually still run behind the scenes in a
     $ bundle config set --local path vendor/bundle
     $ bundle install
     ```
-    If you like `make` on Linux or macOS, then simply run this instead:
+    If you use `make` on Linux or macOS, then simply run this instead:
     ```sh
     $ make install
     ```
@@ -141,7 +142,7 @@ Alternatively, keep the file either build will a global (user-level) Jekyll. Or 
 
 ### Excluding
 
-The `Makefile`, `LICENSE` and `README.md` files do not have to be excluded, as this site is setup to build from a _subdirectory_. Otherwise they would have to be added to the ignore list.
+The `Makefile`, `LICENSE` and `README.md` files in the root do not have to be excluded, as this site is setup to build from a _subdirectory_. Otherwise they would have to be added to the ignore list.
 
 The `Gemfile` and `Gemfile.lock` are _always_ ignored by Jekyll 4.
 
@@ -150,4 +151,4 @@ The `Gemfile` and `Gemfile.lock` are _always_ ignored by Jekyll 4.
 
 - Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).
 - Feel free to modify and reuse this project. You are required to include the license when using this code. Copy `LICENSE` to `LICENSE-source` and then modify `LICENSE` with your own name.
-- Please link back to this repo as well.
+- Please link back to this repo.
