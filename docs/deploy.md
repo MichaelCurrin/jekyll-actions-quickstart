@@ -35,6 +35,8 @@ Your GH Pages site is live on GH Pages. It now rebuilds and deploys on a commit 
 
 Update the badge in your `README.md` to point to your workflow - this makes it easy to see the passing/failing status of your workflow.
 
+Note that the workflow has been configured to deploy using one branch - the default one. If you had the workflow run against other branches too, then you would accidentally deploy to your site any time your pushed work-in-progress code to a branch.
+
 
 ## How GH Pages and GH Actions work together
 
