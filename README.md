@@ -57,12 +57,12 @@ Those approaches have different levels of complexity:
 
 - You use an all-one Jekyll + GH Pages action, like the one in this project and tutorial.
 - Or use a separate action for Jekyll and then another for GH Pages for more modularity (you can swap out one action easily and you can reuse the GH PAges deploy action for other projects like for React).
-- Or you can avoid premade actions and write all the low-level code yourself (not recommended.
+- Or you can avoid pre-made actions and write all the low-level code yourself (not recommended.
 
 The approaches have varying levels of security.
 
-- Some flows use the GitHub-generated `GITHUB_TOKEN`, which only has access to one repo during workflow run and is _very_ secure.
-- Others like the one used in project use a user-generated Personal Access Token which has access to update _all_ your public repos and so is _less_ secure.
+- Some flows use the GitHub-generated `GITHUB_TOKEN`. This only has access to one repo during workflow a run, is never seen by a human and so is _very_ secure.
+- Other flows expect a user-generated Personal Access Token. This has access to update _all_ of your public repos and requires you to generate and store it. It might get abused by a vulnerable or malicious Action. It is _less_ secure.
 
 
 ## Requirements
@@ -76,33 +76,38 @@ For convenience, this project used [GNU Make](https://www.gnu.org/software/make/
 ## Deploy
 > How to deploy this project as a remote site using GH Actions and GH Pages
 
-The part which makes this project run on GitHub Actions is the workflow file - see [jekyll.yml](/.github/workflows/jekyll.yml). You do _not_ need to modify that file. But, you do need to set a GH API **token** for it to use. See below.
+The part which makes this project run on GitHub Actions is the workflow file - see [jekyll.yml](/.github/workflows/jekyll.yml). You do _not_ need to modify that file. Except perhaps to change the branch to `main`.
 
-How to setup as a GitHub Pages site:
+How to setup this project as a GitHub Pages site:
 
 1. Add this repo to your GitHub repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get built from scratch later.
-1. Follow the instructions in the tutorial page's _Add token_ section to add `JEKYLL_PAT` to the environment as Secret, so you have a GitHub Auth token created and added to your repo.
-1. Save a file or push a commit.
-1. Go to the _Actions_ tab of your repo to see the workflow running.
+2. Save a file or push a commit.
+2. Go to the _Actions_ tab of your repo to see the workflow running.
     - On success, it will generate the site, commit to `gh-pages` branch and make the content available GH Pages.
-    - On the very first run, you'll see a success but not actually have the site live. So then you need to go into the Settings of your repo and turn GitHub Pages **off** and then on again (for `gh-pages` branch). This has been my experience.
-1. Check the _environment_ section to see the status and the GH Pages URL.
+    - On the _very first_ run, you'll see a success, but not actually have the site live. So then you need to go into the _Settings_ of your repo and turn GitHub Pages **off** and then on again (for `gh-pages` branch). This has been my experience on multiple projects.
+5. Check the _Environment_ section to see the status and your GH Pages URL.
 
-Your GH Pages site is live on GH Pages and now rebuilds and deploys on a commit or push - using custom gems.
+Your GH Pages site is live on GH Pages. It now rebuilds and deploys on a commit or push - using custom gems.
 
-Note: The _standard_ GitHub Pages flow actually still run behind the scenes in addition to the GH Actions build (which actually can't serve anything alone). The GitHub Pages service just sees `gh-pages` branch as static HTML assets with no Jekyll config, so it will serve the content without processing it through Jekyll.
+Update the badge in your `README.md` to point to your workflow - this makes it easy to see the passing/failing status of your workflow.
+
+### GitHub Pages vs GitHub Actions
+
+Here we use GitHub Actions as a CI/CD flow to just build the site. It does not actually serve anything.
+
+The GitHub Pages deploy runs here, as if you were not using GH Actions at all. The difference is that normally GH Pages points to source content on `master` or `main` branch and no second branch is needed. Here we build to `gh-pages` directory and GH Pages then serves that. There are no Jekyll configs or markdown files on `gh-pages` - just compiled HTML files and other assets. The Action we use also adds an empty `.nojekyll` file to the `gh-pages` branch for us, to explicitly tell GH Pages to serve the content with doing a build.
 
 
 ## Run locally
 
 ### Installation
 
-1. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/#package-management-systems).
-2. Install Bundler as a user gem. Some people prefer to omit `--user-install` flag but then you need access to install to a shared `/usr/lib/ruby` directory.
+1. Clone the repo or your repo copied from the template.
+2. Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/#package-management-systems).
+3. Install Bundler as gem for your user.
     ```sh
     $ gem install bundler --user-install
     ```
-3. Clone the repo or your repo copied from the template.
 4. Install project dependencies using Bundler. This will include Jekyll 4.
     ```sh
     $ bundle config set --local path vendor/bundle
@@ -113,12 +118,15 @@ Note: The _standard_ GitHub Pages flow actually still run behind the scenes in a
     $ make install
     ```
 
+Some people prefer to _omit_ the `--user-install` flag, but, then you need access to install to a shared `/usr/lib/ruby` directory, which could require use of `sudo` to run the `gem` command. In that case, rather change permissions on `/usr/lib/ruby` directory to be writable by all users, so you never have to run `sudo gem ...`.
+
 ### Usage
 
 Start a development server using the project-scoped Jekyll (ignoring any globally-installed Jekyll gem).
 
 ```sh
-$ bundle exec jekyll serve --source sample_site --destination build/ --livereload --trace
+cd sample_site
+bundle exec jekyll serve --destination ../build/ --trace --livereload
 ```
 
 Or, using `make`:
