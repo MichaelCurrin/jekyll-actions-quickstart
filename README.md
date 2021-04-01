@@ -1,5 +1,5 @@
 # Jekyll Actions Quickstart
-> How to setup GH Pages + GH Actions for use with Jekyll 4
+> Deploy a Jekyll 4 site to GH Pages using the "Jekyll Actions" action
 
 [![GH Pages CI](https://github.com/MichaelCurrin/jekyll-actions-quickstart/workflows/GH%20Pages%20CI/badge.svg)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/actions?query=workflow:"GH+Pages+CI")
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/jekyll-actions-quickstart)](https://github.com/MichaelCurrin/jekyll-actions-quickstart/tags/)
