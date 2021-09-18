@@ -14,7 +14,7 @@
 
 ## Purpose
 
-A live demo and introduction around deploying Jekyll 4 to GitHub Pages. Using a GitHub Actions workflow and the [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) action. If you prefer a more generic, flexible, and reusable flow, see my related quickstart repo - [jekyll-github-actions-quickstart](https://github.com/MichaelCurrin/jekyll-github-actions-quickstart). That uses a Ruby action to install Ruby and gems, builds using a shell command, and then deploys using an action that handles GitHub Pages.
+A live demo and introduction around deploying Jekyll 4 to GitHub Pages. Using a GitHub Actions workflow and the [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) action. If you prefer a more generic, flexible, and reusable flow, see my related quickstart repo - [jekyll-gh-actions-quickstart](https://github.com/MichaelCurrin/jekyll-gh-actions-quickstart). That uses a Ruby action to install Ruby and gems, builds using a shell command, and then deploys using an action that handles GitHub Pages.
 
 GitHub Pages already supports building a plain HTML or Jekyll site. No workflow configuration needed.
 
