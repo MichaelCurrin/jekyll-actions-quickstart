@@ -14,9 +14,11 @@
 
 ## Purpose
 
-A live demo and introduction around deploying Jekyll 4 to GitHub Pages - using a GitHub Actions workflow and the [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) action. If you prefer to use a more generic Ruby action to setup your environment, see my related quickstart - [jekyll-github-actions-quickstart](https://github.com/MichaelCurrin/jekyll-github-actions-quickstart).
+A live demo and introduction around deploying Jekyll 4 to GitHub Pages. Using a GitHub Actions workflow and the [Jekyll Actions](https://github.com/marketplace/actions/jekyll-actions) action. If you prefer a more generic, flexible, and reusable flow, see my related quickstart repo - [jekyll-github-actions-quickstart](https://github.com/MichaelCurrin/jekyll-github-actions-quickstart). That uses a Ruby action to install Ruby and gems, builds using a shell command, and then deploys using an action that handles GitHub Pages.
 
-The reason why we use GitHub Actions to build our Jekyll site is that it gives us more control of the environment and build flow. Like using Jekyll 4 instead of Jekyll 3, using custom gems and adding in shell, Python, or Node.js commands before the Jekyll build command.
+GitHub Pages already supports building a plain HTML or Jekyll site. No workflow configuration needed.
+
+So reason why we use GitHub Actions here to build our Jekyll site is that it gives us more control over the environment and build steps. Like the ability to choose Jekyll 4 instead of Jekyll 3, using custom gems, and adding in shell, Python, or NPM commands before the Jekyll build command.
 
 If you are new to GH Actions, see links and code snippets in my [Workflow Builder](https://michaelcurrin.github.io/workflow-builder/) project.
 
