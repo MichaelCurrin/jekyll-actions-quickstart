@@ -13,23 +13,23 @@ $ make build
 Or
 
 ```sh
-cd sample_site
-JEKYLL_ENV=production bundle exec jekyll build -d ../build --trace
+$ cd sample_site
+$ JEKYLL_ENV=production bundle exec jekyll build -d ../build --trace
 ```
 
 Then view the output in `build` at your project root.
 
 
-## Setup this project as a GitHub Pages site
+## Set up this project as a GitHub Pages site
 
 The part which makes this project run on GitHub Actions is the workflow file - see [jekyll.yml](/.github/workflows/jekyll.yml). You do _not_ need to modify that file. Except perhaps to change the branch to `main`.
 
 1. Add this repo to your GitHub repos using the template or fork button. You only need `master` branch. The `gh-pages` branch will get built from scratch later.
-2. Save a file or push a commit.
-2. Go to the _Actions_ tab of your repo to see the workflow running.
+1. Save a file or push a commit.
+1. Go to the _Actions_ tab of your repo to see the workflow running.
     - On success, it will generate the site, commit to `gh-pages` branch and make the content available GH Pages.
     - On the _very first_ run, you'll see a success, but not actually have the site live. So then you need to go into the _Settings_ of your repo and turn GitHub Pages **off** and then on again (for `gh-pages` branch). This has been my experience on multiple projects.
-5. Check the _Environment_ section to see the status and your GH Pages URL.
+1. Check the _Environment_ section to see the status and your GH Pages URL.
 
 Your GH Pages site is live on GH Pages. It now rebuilds and deploys on a commit or push - using custom gems.
 
