@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
