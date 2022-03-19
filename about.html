@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>About Actions | Jekyll Actions Guide</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="About Actions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to setup GH Pages + GH Actions for use with Jekyll 4" />
+<meta property="og:description" content="How to setup GH Pages + GH Actions for use with Jekyll 4" />
+<link rel="canonical" href="https://michaelcurrin.github.io/jekyll-actions-quickstart/about.html" />
+<meta property="og:url" content="https://michaelcurrin.github.io/jekyll-actions-quickstart/about.html" />
+<meta property="og:site_name" content="Jekyll Actions Guide" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About Actions" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"How to setup GH Pages + GH Actions for use with Jekyll 4","headline":"About Actions","url":"https://michaelcurrin.github.io/jekyll-actions-quickstart/about.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/jekyll-actions-quickstart/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://michaelcurrin.github.io/jekyll-actions-quickstart/feed.xml" title="Jekyll Actions Guide" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/jekyll-actions-quickstart/">Jekyll Actions Guide</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/jekyll-actions-quickstart/about.html">About Actions</a><a class="page-link" href="/jekyll-actions-quickstart/resources.html">Resources</a><a class="page-link" href="/jekyll-actions-quickstart/time-ago.html">Time ago</a><a class="page-link" href="/jekyll-actions-quickstart/tutorial.html">Tutorial</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">About Actions</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="comparison">Comparison</h2>
+
+<p>GitHub’s Actions functionality as a build and deploy pipeline for a Jekyll site gives more control than a standard <em>GitHub Pages</em> deploy.</p>
+
+<p>Here are the main differences between GitHub Pages when using Actions or not.</p>
+
+<ul>
+  <li>Jekyll version
+    <ul>
+      <li>The GitHub Pages environment limits us to using Jekyll <code class="language-plaintext highlighter-rouge">3.9</code>.</li>
+      <li>Actions let you use a version in your Gemfile, such as Jekyll <code class="language-plaintext highlighter-rouge">4.2</code>.</li>
+    </ul>
+  </li>
+  <li>Plugins
+    <ul>
+      <li>GitHub Pages limits you to a set of supported <a href="https://pages.github.com/versions/">gem versions</a>, so you cannot use plugins or versions outside of this. You can only specify whether a config is used by using <code class="language-plaintext highlighter-rouge">plugins</code> field in the config.</li>
+      <li>Actions lets you choose any plugin - whether your own or someone else’s.</li>
+    </ul>
+  </li>
+  <li>Themes
+    <ul>
+      <li>GitHub Pages normally limits you to these <a href="https://pages.github.com/themes/">Themes</a> at certain versions. Though, GitHub Pages does also let you use the <code class="language-plaintext highlighter-rouge">remote_theme</code> parameter through the supported <a href="https://github.com/benbalter/jekyll-remote-theme">benbalter/jekyll-remote-theme</a> plugin.</li>
+      <li>Actions lets you choose any theme  - whether your own or by someone else.</li>
+    </ul>
+  </li>
+  <li>Workflow
+    <ul>
+      <li>GitHub Pages gives you limited output and error messages when running a build and check that everything built okay.</li>
+      <li>With Actions, you specify a workflow file, do a build in a container and see verbose logged steps and errors. You can combine multiple actions or how secrets are used as environment variables. And you can add extra steps like calling an API at build time using a Ruby plugin. You can even compile a ReactJS site and use other non-Jekyll options if you find the right Action on the Marketplace.</li>
+    </ul>
+  </li>
+  <li>Build destination
+    <ul>
+      <li>GitHub Pages builds to a <code class="language-plaintext highlighter-rouge">_site</code> or similar build location which you never get to see directly. You can mirror it by building locally of course.</li>
+      <li>Using Actions, you can build to a different branch like <code class="language-plaintext highlighter-rouge">gh-pages</code>. You can even output to your content another repo. When using GH Pages alone, you just needed one branch like <code class="language-plaintext highlighter-rouge">master</code> or <code class="language-plaintext highlighter-rouge">main</code>, without worrying about a <code class="language-plaintext highlighter-rouge">gh-pages</code> branch.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="notes">Notes</h2>
+
+<p>Even if a plugin or themes written for Jekyll 3 installs and runs without error in Jekyll 4, you may still run into issues. For example, you may have to overwrite a theme <em>layout</em> or <em>includes</em> file in your project, so that you can control the URLs better.</p>
+
+<p>See the <a href="https://jekyllrb.com/docs/upgrading/3-to-4/">Upgrading from 3x to 4x</a> guide to see what changes there are.</p>
+
+<p>See also issue <a href="https://github.com/github/pages-gem/issues/651">#651</a> on the Pages Gem repo, which deals with adding Jekyll 4 support to GitHub Pages. This is complex to implement, so don’t expect it soon.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-actions-quickstart/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Jekyll Actions Guide</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Jekyll Actions Guide</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/MichaelCurrin"><svg class="svg-icon"><use xlink:href="/jekyll-actions-quickstart/assets/minima-social-icons.svg#github"></use></svg> <span class="username">MichaelCurrin</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>How to setup GH Pages + GH Actions for use with Jekyll 4</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
